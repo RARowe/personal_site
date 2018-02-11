@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    video#bgvid {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -100;
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      background: url(polina.jpg) no-repeat;
+      background-size: cover;
+    }
+    .top-right {
+      float: right;
+    }
+
+    .center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 400px;
+      height: 300px;
+      margin-top: 0px;
+      margin-left: -150px;
+    }
+
+    .link {
+      font-size: 42px;
+    }
+
+    .bottom {
+      position: absolute;
+      bottom: 0px;
+    }
+  </style>
+  <title>the Red Rose</title>
+</head>
+
+  <body>
+    <h1><del>Joe and</del> the Red Rose</h1>
+    <h4>You should probably view this site on a desktop, fwiw</h4>
+    <div class="top-right">
+      <h3>YEAH, THAT'S ALL WELL AND GOOD, BUT WHERE IS JOE???</h3>
+      <button onclick="alert('he is finishing up school, like a responsible young man')">CLICK HERE TO FIND OUT</button>
+    </div>
+    <div class="center">
+      <a target="_blank" class="link" href="https://www.youtube.com/watch?v=dn6gpLBssKI">click to see a live performance</a>
+    </div>
+    <video width="320" height="240" playsinline autoplay muted loop id="bgvid" src="images/redrose.mov"></video>
+                            <!-- Start of SimpleHitCounter Code -->
+<div align="center" class="bottom">
+  <img src="http://simplehitcounter.com/hit.php?uid=2286490&f=16777215&b=0" border="0" height="18" width="83" alt="office cleaning broward"></a><br></div>
+<!-- End of SimpleHitCounter Code -->
+  </body>
+</html>

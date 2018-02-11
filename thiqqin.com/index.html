@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="aligner">
+            <div class="aligner-item aligner-item-fixed">
+                <h1>丅乇乂丅</h1>
+                <h1>丅卄工㔿㔿工𠘨</h1>
+                <textarea rows="8" oninput="setThickText(this.value)" placeholder="Type here..."></textarea>
+                <h2 id="thiqqText"></h2>
+            </div>
+        </div>
+    </body>
+    <style>
+        textarea {
+            resize: none;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .aligner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aligner-item {
+            flex: 1;
+        }
+
+        .aligner-item-fixed {
+            flex: none;
+            width: 80%;
+            max-width: 80%;
+        }
+    </style>
+    <script>
+        var thiqqtionary = {
+            'a': '卂', 'b': '乃', 'c': '匚', 'd': '刀', 'e': '乇', 'f': '下',
+            'g': '厶', 'h': '卄', 'i': '工', 'j': '丁', 'k': '长', 'l': '乚',
+            'm': '从', 'n': '𠘨', 'o': '口', 'p': '尸', 'q': '㔿', 'r': '尺',
+            's': '丂', 't': '丅', 'u': '凵', 'v': 'リ', 'w': '山', 'x': '乂',
+            'y': '丫', 'z': '乙', ' ': '&nbsp;&nbsp;&nbsp;'
+        };
+
+        function setThickText(value) {
+            document.getElementById('thiqqText').innerHTML = thickenText(value);
+        }
+
+        function thickenText(value) {
+            var input = value.toLowerCase();
+            var output = [];
+            for (var i = 0; i < input.length; i++) {
+                if (thiqqtionary[input[i]]) {
+                    output.push(thiqqtionary[input[i]]);
+                }
+                else {
+                    output.push(input[i]);
+                }
+            }
+            return output.join('');
+        }
+    </script>
+</html>
