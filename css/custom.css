@@ -1,13 +1,13 @@
-ul {
+ul.inline-list {
   list-style-type: none;
 }
 
-li {
+ul.inline-list li {
   float: left;
   margin-right: 1em;
 }
 
-li a {
+ul.inline-list li a {
   display: block;
 }
 
