@@ -4,7 +4,7 @@ ul.inline-list {
 
 ul.inline-list li {
   float: left;
-  margin-right: 1em;
+  margin-right: 0.5em;
 }
 
 ul.inline-list li a {
