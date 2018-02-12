@@ -2,7 +2,7 @@ server {
 	listen 80 default_server;
 	listen [::]:80 default_server;
 
-	root /var/www/sites/joeandtheredrose.com;
+	root /var/www/joeandtheredrose.com;
 
 	index index.html index.htm index.nginx-debian.html;
 
