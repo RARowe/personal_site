@@ -23,26 +23,8 @@ ul.inline-list li a {
   width: 100%;
 }
 
-.home-header {
+.header {
   padding-top: 1em;
-  background-color: #55efc4;
-  text-align: center;
-}
-
-.resume-header {
-  padding-top: 1em;
-  background-color: #81ecec;
-  text-align: center;
-}
-
-.projects-header {
-  padding-top: 1em;
-  background-color: #74b9ff;
-  text-align: center;
-}
-
-.hobbies-header {
-  padding-top: 1em;
-  background-color: #a29bfe;
+  background-color: #a8b8bb;
   text-align: center;
 }
