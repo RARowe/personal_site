@@ -12,6 +12,10 @@ server {
 
 	server_name andrewrowe.me www.andrewrowe.me;
 
+  if ($scheme = http) {
+      return 301 https://$server_name$request_uri;
+  }
+
 	location / {
 		try_files $uri $uri/ =404;
 	}
