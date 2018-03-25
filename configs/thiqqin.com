@@ -1,6 +1,8 @@
 server {
-	listen 80;
-	listen [::]:80;
+	listen 443 ssl;
+  
+  ssl_certificate /etc/letsencrypt/live/thiqqin.com/fullchain.pem;
+  ssl_certificate_key /etc/letsencrypt/live/thiqqin.com/privkey.pem;
 
 	root /var/www/thiqqin.com;
 

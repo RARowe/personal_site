@@ -1,12 +1,8 @@
 server {
 	listen 443 ssl;
-  listen 80;
-  return 301 $host$request_uri;
   
   ssl_certificate /etc/letsencrypt/live/andrewrowe.me/fullchain.pem;
   ssl_certificate_key /etc/letsencrypt/live/andrewrowe.me/privkey.pem;
-
-  ssl_session_timeout 10m;
 
 	root /var/www/andrewrowe.me;
 

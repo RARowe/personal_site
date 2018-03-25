@@ -1,6 +1,8 @@
 server {
-	listen 80;
-	listen [::]:80;
+	listen 443 ssl;
+  
+  ssl_certificate /etc/letsencrypt/live/blendwakanda.com/fullchain.pem;
+  ssl_certificate_key /etc/letsencrypt/live/blendwakanda.com/privkey.pem;
 
 	root /var/www/blendwakanda.com;
 
