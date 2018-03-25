@@ -1,5 +1,7 @@
 server {
 	listen 443 ssl;
+  listen 80;
+  return 301 $host$request_uri;
   
   ssl_certificate /etc/letsencrypt/live/andrewrowe.me/fullchain.pem;
   ssl_certificate_key /etc/letsencrypt/live/andrewrowe.me/privkey.pem;
@@ -11,8 +13,6 @@ server {
 	index index.html index.htm index.nginx-debian.html;
 
 	server_name andrewrowe.me www.andrewrowe.me;
-
-  return 301 https://andrewrowe.me/$request_uri;
 
 	location / {
 		try_files $uri $uri/ =404;
